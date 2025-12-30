@@ -4,8 +4,9 @@ import SplineViewer from './components/SplineViewer'
 import TutorialCard from './components/TutorialCard'
 import SocialLinks from './components/SocialLinks'
 import ProjectsList from './components/ProjectsList'
-import GameDescription from './components/GameDescription'
+import ProjectDescription from './components/ProjectDescription'
 import TechStack from './components/TechStack'
+import { projectCategories } from './data/projectsData'
 import './App.css'
 
 export type PageType = 'profile' | 'game' | 'web' | 'app' | 'other'
@@ -39,10 +40,10 @@ function App() {
           <>
             {/* Project Page Layout - Full width description */}
             <section className="content-column">
-              {currentPage === 'game' && <GameDescription />}
-              {currentPage === 'web' && <GameDescription />}
-              {currentPage === 'app' && <GameDescription />}
-              {currentPage === 'other' && <GameDescription />}
+              <ProjectDescription 
+                key={currentPage}
+                category={projectCategories[currentPage as keyof typeof projectCategories]} 
+              />
             </section>
           </>
         )}

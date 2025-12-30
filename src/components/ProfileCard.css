@@ -19,6 +19,7 @@
   color: var(--dos-light-cyan);
   padding: 0 8px;
   font-size: 16px;
+  z-index: 10;
 }
 
 .profile-image-container {

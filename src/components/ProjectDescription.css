@@ -1,17 +1,14 @@
-.game-description {
+.project-description {
   background: var(--bg-card);
   border: 2px solid var(--dos-light-cyan);
-  padding: 24px;
-  height: 100%;
+  flex: 1;
+  min-height: 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   position: relative;
-  overflow-y: auto;
 }
 
-.game-description::before {
-  content: '[ DESCRIPTION ]';
+.category-label {
   position: absolute;
   top: -12px;
   left: 8px;
@@ -19,6 +16,66 @@
   color: var(--dos-light-cyan);
   padding: 0 8px;
   font-size: 16px;
+  z-index: 10;
+  font-family: 'VT323', monospace;
+}
+
+/* 메뉴 네비게이션 바 - BOOTSTRA.386 스타일 */
+.desc-navbar {
+  display: flex;
+  background: #c0c0c0;
+  border-bottom: 2px solid #000080;
+  padding: 0;
+  margin-top: 12px;
+  height: auto;
+}
+
+.nav-item {
+  background: transparent;
+  border: none;
+  color: #000000;
+  padding: 8px 16px;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: none;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-item::first-letter {
+  color: #aa0000;
+}
+
+.nav-item:hover {
+  background: #000000;
+  color: #c0c0c0;
+}
+
+.nav-item:hover::first-letter {
+  color: #ff5555;
+}
+
+.nav-item.active {
+  background: #000080;
+  color: #ffffff;
+}
+
+.nav-item.active::first-letter {
+  color: #ff5555;
+}
+
+/* 내부 스크롤 wrapper - overflow를 여기로 이동 */
+.desc-inner {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
 }
 
 .desc-header {
@@ -143,6 +200,18 @@
   height: 12px;
   background: var(--dos-light-green);
   animation: blink 1s infinite;
+}
+
+.status-indicator.in-progress {
+  background: var(--dos-yellow);
+}
+
+.status-indicator.planning {
+  background: var(--dos-light-cyan);
+}
+
+.status-indicator.completed {
+  background: var(--dos-light-green);
 }
 
 .year {
