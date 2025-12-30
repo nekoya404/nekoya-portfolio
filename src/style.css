@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* BOOTSTRA.386 DOS Color Palette */
+  --dos-blue: #000084;
+  --dos-light-blue: #5555ff;
+  --dos-cyan: #00aaaa;
+  --dos-light-cyan: #55ffff;
+  --dos-green: #00aa00;
+  --dos-light-green: #55ff55;
+  --dos-yellow: #ffff55;
+  --dos-white: #aaaaaa;
+  --dos-bright-white: #ffffff;
+  --dos-black: #000000;
+  --dos-red: #aa0000;
+  --dos-light-red: #ff5555;
+  --dos-magenta: #aa00aa;
+  --dos-light-magenta: #ff55ff;
+  
+  /* Theme variables */
+  --bg-dark: var(--dos-blue);
+  --bg-card: var(--dos-black);
+  --bg-card-hover: #000055;
+  --text-primary: var(--dos-bright-white);
+  --text-secondary: var(--dos-white);
+  --text-highlight: var(--dos-yellow);
+  --border-color: var(--dos-light-blue);
+  --accent-green: var(--dos-light-green);
+  --accent-cyan: var(--dos-light-cyan);
+  --accent-yellow: var(--dos-yellow);
+}
+
+body {
+  font-family: 'VT323', monospace;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 18px;
+  line-height: 1.4;
+  image-rendering: pixelated;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dos-light-cyan);
+}
+
+a:hover {
+  color: var(--dos-yellow);
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Scanline effect */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  z-index: 9999;
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+/* DOS-style text selection */
+::selection {
+  background: var(--dos-light-blue);
+  color: var(--dos-bright-white);
+}

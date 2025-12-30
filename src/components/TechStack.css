@@ -1,0 +1,55 @@
+.tech-stack {
+  background: var(--bg-card);
+  border: 2px solid var(--dos-light-cyan);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.tech-stack::before {
+  content: '[ TECH_STACK ]';
+  position: absolute;
+  top: -12px;
+  left: 8px;
+  background: var(--dos-blue);
+  color: var(--dos-light-cyan);
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+.stack-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stack-label {
+  color: var(--dos-bright-white);
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-badge {
+  height: 28px;
+  transition: transform 0.1s;
+  cursor: pointer;
+}
+
+.tech-badge:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tech-badge {
+    height: 22px;
+  }
+}
