@@ -8,7 +8,7 @@
 }
 
 .spline-container::before {
-  content: '[ 3D_VIEWER.EXE ]';
+  content: '[ 3D_VIEWER ]';
   position: absolute;
   top: -12px;
   left: 8px;

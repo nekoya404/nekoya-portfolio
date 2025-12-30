@@ -4,7 +4,7 @@ function GameDescription() {
   return (
     <div className="game-description">
       <div className="desc-header">
-        <h2 className="desc-title">GAME_PROJECT.EXE</h2>
+        <h2 className="desc-title">GAME_PROJECT</h2>
         <span className="desc-badge">Full Stack Development</span>
       </div>
       

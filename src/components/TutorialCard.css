@@ -12,7 +12,7 @@
 }
 
 .tutorial-card::before {
-  content: '[ TUTORIAL.VID ]';
+  content: '[ TUTORIAL ]';
   position: absolute;
   top: -12px;
   left: 8px;

@@ -6,7 +6,7 @@
 }
 
 .projects-list::before {
-  content: '[ PROJECTS.DIR ]';
+  content: '[ PROJECTS ]';
   position: absolute;
   top: -12px;
   left: 8px;

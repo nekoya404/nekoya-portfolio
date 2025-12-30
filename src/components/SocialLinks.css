@@ -10,7 +10,7 @@
 }
 
 .social-links::before {
-  content: '[ LINKS.EXE ]';
+  content: '[ LINKS ]';
   position: absolute;
   top: -12px;
   left: 8px;

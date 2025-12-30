@@ -15,7 +15,7 @@ interface ProjectsListProps {
 
 const projects: Project[] = [
   {
-    title: 'PROFILE.EXE',
+    title: 'PROFILE',
     subtitle: 'Experience & Skills',
     pageType: 'profile',
     color: '#22c55e'

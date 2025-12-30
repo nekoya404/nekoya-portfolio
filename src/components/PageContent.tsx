@@ -8,7 +8,7 @@ interface PageContentProps {
 
 const pageData: Record<PageType, { title: string; icon: string; description: string; details: string[] }> = {
   profile: {
-    title: 'PROFILE.EXE',
+    title: 'PROFILE',
     icon: '👤',
     description: 'Default home page',
     details: []

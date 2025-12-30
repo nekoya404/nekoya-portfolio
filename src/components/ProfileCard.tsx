@@ -42,7 +42,7 @@ function ProfileCard() {
         <h2 className="name">I'm <span className="highlight">YOUR_NAME</span></h2>
         
         <p className="description">
-          <strong>PRODUCT_DESIGNER.EXE</strong> with 5+ years of production experience in various business areas. 
+          <strong>PRODUCT_DESIGNER</strong> with 5+ years of production experience in various business areas. 
           Experienced in creating design solutions for mobile, websites, and services.
         </p>
         

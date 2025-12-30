@@ -11,7 +11,7 @@
 
 /* DOS Window Title Bar */
 .profile-card::before {
-  content: '[ PROFILE.DAT ]';
+  content: '[ PROFILE ]';
   position: absolute;
   top: -12px;
   left: 8px;

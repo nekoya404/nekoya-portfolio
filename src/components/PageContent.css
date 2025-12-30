@@ -10,7 +10,7 @@
 }
 
 .page-content::before {
-  content: '[ PAGE_VIEWER.EXE ]';
+  content: '[ PAGE_VIEWER ]';
   position: absolute;
   top: -12px;
   left: 8px;
