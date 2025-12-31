@@ -6,7 +6,7 @@ import SocialLinks from './components/SocialLinks'
 import ProjectsList from './components/ProjectsList'
 import ProjectDescription from './components/ProjectDescription'
 import TechStack from './components/TechStack'
-import { projectCategories } from './data/projectsData'
+import { projectCategories } from './data/projects'
 import './App.css'
 
 export type PageType = 'profile' | 'game' | 'web' | 'app' | 'other'

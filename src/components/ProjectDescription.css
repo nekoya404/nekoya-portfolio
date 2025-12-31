@@ -121,6 +121,75 @@
   border-left: 3px solid var(--dos-light-blue);
 }
 
+/* 사진 갤러리 스타일 */
+.pictures-gallery {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--dos-light-blue);
+}
+
+.gallery-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.gallery-image {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border: 2px solid var(--dos-light-cyan);
+  image-rendering: auto;
+}
+
+.gallery-nav {
+  background: var(--dos-blue);
+  border: 2px solid var(--dos-light-cyan);
+  color: var(--dos-light-cyan);
+  font-size: 24px;
+  padding: 16px 12px;
+  cursor: pointer;
+  font-family: 'VT323', monospace;
+  transition: background 0.1s;
+}
+
+.gallery-nav:hover {
+  background: var(--dos-light-cyan);
+  color: var(--dos-blue);
+}
+
+.gallery-indicator {
+  display: flex;
+  gap: 8px;
+}
+
+.indicator-dot {
+  width: 12px;
+  height: 12px;
+  background: var(--dos-dark-gray);
+  border: 1px solid var(--dos-light-cyan);
+  cursor: pointer;
+}
+
+.indicator-dot.active {
+  background: var(--dos-light-cyan);
+}
+
+.indicator-dot:hover {
+  background: var(--dos-cyan);
+}
+
+.gallery-counter {
+  color: var(--dos-light-green);
+  font-size: 16px;
+  font-family: 'VT323', monospace;
+}
+
 .feature-list {
   list-style: none;
   display: flex;
